@@ -67,6 +67,6 @@ let age1 = 20;
 
 if(true){
     let age1 = 40
-    console.log(age1) //refrence error
+    console.log(age1) 
 }
 console.log(age1) // output 20 kyoki 40 block ke andr waali value ko hum block se bhar use nhi kr skte hai 
