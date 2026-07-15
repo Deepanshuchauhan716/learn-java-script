@@ -17,3 +17,13 @@ let marks = 40;
 marks = 100;
 console.log(marks);
 
+// 4 question ====> do variable bnaao uske sum,diifer,product, division print krvao 
+
+let a = 10;
+let b = 20;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+
