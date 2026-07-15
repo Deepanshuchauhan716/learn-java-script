@@ -15,3 +15,20 @@
 var age  = 20 ;
 let age = 30;
 const pi = 3.14;
+
+// VARIABLES KYA STORE KRTE HAI
+
+// 1 => number 
+// 2 => string
+// 3 => boolean
+// 4 => array
+// 5 => object
+
+let number = 20;
+let string = "deepanshu";
+let boolean = true;
+let array = ["apple","banana","mango"]
+let object = {
+    name:deepanshu,
+    age : 20
+};
