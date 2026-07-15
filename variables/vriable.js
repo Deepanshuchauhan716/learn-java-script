@@ -32,3 +32,18 @@ let object = {
     name:deepanshu,
     age : 20
 };
+
+// DIFFERENCE BETWEEN LET CONST
+
+// LET
+// you can change value 
+
+let score  = 50;
+score = 100;
+console.log(score); // output => 100 valid✅
+
+// CONST 
+// you can not change the value 
+
+const score = 50;
+score = 100; // error ❌
