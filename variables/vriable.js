@@ -47,3 +47,14 @@ console.log(score); // output => 100 valid✅
 
 const score = 50;
 score = 100; // error ❌
+
+// IMPORTANCE = > valid and invalid name of variables
+
+// In js you can start variable name _ , $ , letter .
+// In js you can not  start variable name with number .
+ 
+let $name = "deepanshu"; // valid
+let _age = 20; // valid
+let name = "harish" // valid 
+
+//let 34age = 34 // invalid
