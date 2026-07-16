@@ -10,5 +10,33 @@ let name = "deepanshu" // yaha deepanshu ek string hai'
 // 1 => PREMETIVE DATA TYPE . 2 => NON-PREMETIVE DATA TYPES
 
 // PREMETIVE
+
 // 1 => NUMBER
+ let age = 20;
+ let price = 200;
+
+//  2 => string 
+
+let name = "deepanshu";
+let city = "delhi";
+
+// 3 => boolean
+
+let boolean = true;
+let boolean = false;
+
+// 4 => undefined
+
+let a;
+console.log(a);
+
+// 5 => null
+
+let user = null;
+
+// 6 => Bigint
+
+let num = 648293876458634839748n;
+
+
 
