@@ -53,3 +53,8 @@ let student = {
 
 let fruit = ["mango","apple","litchi"];
 
+// Extra knowledge
+// typeof operator btata hai ki variable ka type kya hai
+
+let age1 = 20;
+console.log(typeof age1); //number 
