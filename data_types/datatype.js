@@ -38,5 +38,18 @@ let user = null;
 
 let num = 648293876458634839748n;
 
+// NON PREMETIVE DATA TYPES
+// ye refrence ke through kaam krte hai
 
+// 1 => object
+
+let student = {
+    name: "deepanshu",
+    class : bca,
+    age : 19
+};
+
+// 2 => Array
+
+let fruit = ["mango","apple","litchi"];
 
