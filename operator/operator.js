@@ -55,7 +55,20 @@ console.log(age >= 18 && hasId) ;
 
 // 5 => increment and decrement operator
 
+let a = 5; // INCREMENT
+a++;
+console.log(a); // 6
+
+let b = 5; // DECREMENT 
+a--;
+console.log(a); // 4
+
 // 6 => string operator
+
+let first = "deepa";
+let last = "anshu";
+console.log(first + last); //deepanshu
+
 // 7 => turnary operator
 // 8 => nullish coalescing operator
 // 9 => optional chaining operator
