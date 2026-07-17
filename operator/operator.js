@@ -44,8 +44,17 @@ console.log(a != b)
 console.log(a === b)
 console.log(a !== b)
 
-// 4 => logical operator
+// 4 => logical operator condition ko combine krte hai
+
+let age = 20;
+let hasId = true;
+console.log(age >= 18 && hasId) ;
+
+// 3 type ke logical operator hote hai AND(&&), OR(||) , NOT(!)
+
+
 // 5 => increment and decrement operator
+
 // 6 => string operator
 // 7 => turnary operator
 // 8 => nullish coalescing operator
