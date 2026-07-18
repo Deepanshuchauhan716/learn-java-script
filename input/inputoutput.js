@@ -17,3 +17,28 @@ console.log(age);
 // ye sab input hote hai
 
 
+// OUTPUT
+// output ka matlab hai user ko result dikhaana  jaava script me output dene ke kai treeke hote hai
+
+// 1 => console.log()
+console.log("hello world");
+
+let name = "deepanshu";
+console.log(name);
+
+// multiple value print kraana 
+let name = "deepanshu";
+let age = 20;
+
+console.log(name,age);
+
+// 2 => alert()
+// Browser me popup dikhaata hai
+
+alert("heelo deepanshu");
+// screen par aate hi heelo deepanshu aayega !!
+
+// 3 => document.write()
+// HTML PAGE PAR LIKHTA HAI
+
+document.write("welcome");
