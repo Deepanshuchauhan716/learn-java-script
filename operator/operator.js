@@ -69,10 +69,38 @@ let first = "deepa";
 let last = "anshu";
 console.log(first + last); //deepanshu
 
-// 7 => turnary operator
-// 8 => nullish coalescing operator
-// 9 => optional chaining operator
-// 10 => type operator
-// 11 => bitwise operator
+// 7 => turnary operator(like if-else)
 
+let age = 20;
+let result = age >= 18 ? "adult" : "minor";
+console.log(result);
+
+// 8 => nullish coalescing operator
+//default value dene ke liye use hota hai jab value null ya undefind ho
+
+let name = null;
+console.log(name ?? "guest");
+
+// 9 => optional chaining operator
+//nested object me safely property access krne ke liye 
+
+let user = {};
+console.log(user.address?.city);
+
+// 10 => type operator
+// kisi cheez ke type jaanne ke liye typeof ka use hota hai
+
+let a  = 10;
+console.log(typeof a) // number 
+
+// 11 => bitwise operator
+//ye operator (0 and 1 ) level par kaam krta hain
+
+//&
+//|
+//^
+//-
+//<<
+//>>
+//>>>
 
