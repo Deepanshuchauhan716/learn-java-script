@@ -22,3 +22,9 @@ console.log(st) //100 is a string here not a number
 
 let bool = String(true);
 console.log(bool);
+
+// BOOLEAN TO STRING 
+let string =  Boolean("hello");
+console.log(string);
+
+// ye sab hota  hai typeconversion jisme hum manually ek data type ko dusre data type me convert krte hai 
