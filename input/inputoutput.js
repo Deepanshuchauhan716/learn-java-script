@@ -42,3 +42,16 @@ alert("heelo deepanshu");
 // HTML PAGE PAR LIKHTA HAI
 
 document.write("welcome");
+
+//CONSOLE.LOG() KE EXTRA METHOD
+
+console.error("error") // error massage dikhata hai
+console.warn("warning") // warning dikhata hai
+// console.table() data ko table form me dikhaata hai
+
+let student = {
+    name : "deepanshu",
+    age : 20
+};
+
+console.table(student);
