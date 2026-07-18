@@ -8,7 +8,7 @@
 
 // kisi bi user se input lene ke liye prompt("example") ka use hota hai
 
-let name = prompt("enter your name");
+let name = prompt("enter your name"); 
 console.log(name)
 
 let age = prompt("enter your age");
