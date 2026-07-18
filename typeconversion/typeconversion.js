@@ -15,3 +15,10 @@ let age = prompt("Enter your age ");
 
 // lekin prompt humesa string return krta hai
 // In memory => age = "20"
+
+// JAVA SCRIPT ME 3 TYPE KE TYPE CONVERSION HOTE HAI
+// 1 => MANUAL CONVERSION programmer khud conversion krta hai
+// 2 => AUTOMATIC CONvERSION jisme java script khud se convert kr deti hai 
+
+
+
