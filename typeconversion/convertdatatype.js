@@ -28,3 +28,13 @@ let string =  Boolean("hello");
 console.log(string);
 
 // ye sab hota  hai typeconversion jisme hum manually ek data type ko dusre data type me convert krte hai 
+
+// AUTOMATIC CONVERSION
+
+console.log("10" + 5); // 105 instead of 15 java script make 10 is string
+
+console.log("10" - 5); // 5 instead of 105 java script make 10 number
+
+console.log("6" * 5) // 30 java script make 6 number 
+
+console.log("20" / 4) // 5 java script make 20 is a number
