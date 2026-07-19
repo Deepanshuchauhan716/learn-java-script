@@ -57,3 +57,14 @@ console.log("2" + 10 + 5) //2105
 
 console.log("10" + 5 * 2) //1010
 
+// LEVEL 6 (INTERVIEW LEVEL)
+
+console.log("100" - true) // 99
+
+console.log("100" + true) // 100true
+
+console.log("50" * false) //0
+
+console.log("hello" - true) //NaN
+
+console.log(true + false + "10") //110
