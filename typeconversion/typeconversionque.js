@@ -23,3 +23,15 @@ console.log(true + false) // 1
 
 console.log(true * 10) // 10 
 
+// LEVEL 3 STRING + BOOLEAN
+
+console.log(true + "5"); // true5 java script ne true ko bhi as a string traet kiya 
+
+console.log("5" + false) // 5false
+
+console.log(false + "10") // false10
+
+console.log("hello" + true ) //hellotrue
+
+console.log("JS" + false + true) //JSfalsetrue
+
