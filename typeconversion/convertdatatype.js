@@ -42,5 +42,5 @@ console.log("20" / 4) // 5 java script make 20 is a number
 // + OPERATOR AND ETC OPERATOR ME EK FRK HOTA HAI KI + NUMBER KO BHI STRING BNA DETA HAI AKASAR JABKI BAAKI OPEARATOR STRING KO NUMBER BNANE KI KOSIS KRTE HAI
 
 // BOOLEAN KE SAATH 
-console.log(true + 1) // 2 because true = 1 and 1 + 1 = 2 ;
+console.log(true + 1) // 2 because true = 1 and 1 + 1 = 2;
 
