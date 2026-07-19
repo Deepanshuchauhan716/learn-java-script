@@ -68,3 +68,15 @@ console.log("50" * false) //0
 console.log("hello" - true) //NaN
 
 console.log(true + false + "10") //110
+
+// BONUS TRICKY
+
+console.log(5 + "5" - 2) //53
+
+console.log("5" - 2 + "3") //33
+
+console.log(true + true + "5") //25
+
+console.log("5" + true + false) //5truefalse
+
+console.log("10" * "2" + "5") //205
