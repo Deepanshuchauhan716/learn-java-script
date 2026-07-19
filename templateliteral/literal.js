@@ -24,4 +24,29 @@ console.log("my name is " + nam + "I am " + age + "Year old and i live in " + ci
 
 console.log(`my name is ${nam}, I am ${age} year old and i live in ${city}`);
 
-// =============SO THIS IS THE DIFFERENCE ===============
+// =============SO THIS IS THE DIFFERENCE ===============  ${} isko expression placeholder ya interpolation kehte hai
+
+// =========SYNTAX=======
+// `${expression}`
+
+// EXAMPLES
+
+let name3 =  "deepanshu"
+console.log(`hello ${name3}`);
+
+let age3 = 20;
+console.log(`age = ${age3}`);
+
+let a = 10;
+let b = 20;
+console.log(`${a + b}`);
+
+function greet(){
+    return "hello";
+}
+
+console.log(`${greet()} user`);
+
+let first = "deepa";
+let last = "anshu";
+console.log(`${first}${last}`);
