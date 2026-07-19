@@ -45,3 +45,15 @@ console.log(undefined + "10") //undefined10
 
 console.log(null * 10) // 0 
 
+// LEVEL 5 (OPETATOR PRECEDENCE)
+
+console.log(10 + "5" * 2) //20 because * operator number banane ki kosis krta hai to "5" * 2 = 10 and 10 + 10  = 20
+
+console.log("10" - "2" + 5) // 13 beacuse - bhi number bnane ki kosis krta hai 
+
+console.log(10 + 5 + "2") //152 
+
+console.log("2" + 10 + 5) //2105
+
+console.log("10" + 5 * 2) //1010
+
