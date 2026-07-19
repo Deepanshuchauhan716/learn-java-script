@@ -35,3 +35,13 @@ console.log("hello" + true ) //hellotrue
 
 console.log("JS" + false + true) //JSfalsetrue
 
+// LEVEL 4 (NULL AND UNDEFINED)
+
+console.log(null + 10) // 10 beacuse null = 0
+
+console.log(undefined + 10) //Nan
+
+console.log(undefined + "10") //undefined10
+
+console.log(null * 10) // 0 
+
