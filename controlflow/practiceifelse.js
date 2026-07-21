@@ -18,3 +18,18 @@ else if(marks >= 50){
 else{
     console.log(`fail ${name} sorry`);
 }
+
+// TAX CALCULATE
+
+let salary = 40000;
+if(salary <= 30000){
+    console.log("No tax")
+}
+else if(salary <= 40000){
+    console.log("5% tax")
+}
+else if(salary <= 50000){
+    console.log("7% Tax")
+}else{
+    console.log("20% Tax")
+}
