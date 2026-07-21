@@ -53,4 +53,11 @@ switch(day){
     case 7:
         console.log("sun");
         break
+    default:
+        console.log("invalid day")
 }
+
+// BREAK KA USE ISLIYE HOTA HAI KI JHAA PE CASE MIL JAAYE VHI PE CODE RUK JAAYE AAGE NA BADE
+// DEFAULT KA USE TBH HOTA HAI KI AGAR KOI BHI CASE MATCH NA KRE TBH YE CODE CHLE
+
+
