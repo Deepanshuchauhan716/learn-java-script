@@ -92,7 +92,7 @@ if(password == "1234admin"){
 
 // else if ka matlab hota hai ki agar phli condition false hui to doosri check kro basicaaly else if ka use tabh hota hai jab tumhare pass ek se jaada condition hoti hai
 
-// example =====================
+// =========================== example =====================
 
 let marks2 = 85;
 
@@ -107,4 +107,29 @@ else if(marks2 >= 50){
 }
 else{
     console.log("fail");
+}
+
+// ====================== example ======================
+
+let day = 7;
+if(day == 1){
+    console.log("monday");
+}
+else if(day == 2){
+    console.log("tuesday");
+}
+else if(day == 3){
+    console.log("wedsday");
+}
+else if(day == 4){
+    console.log("thursday");
+}
+else if(day == 5){
+    console.log("friday");
+}
+else if(day == 6){
+    console.log("saturday");
+}
+else if(day == 7){
+    console.log("sunday");
 }
