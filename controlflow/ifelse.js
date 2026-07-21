@@ -23,3 +23,32 @@ if( age >= 18){
 }
 
 // agar if ki condition false hui to else ki condition print hogi
+
+
+// ===============CONTROL FLOW ========================
+
+// SEQUENTIAL FLOW
+// CONDITIONAL FLOW 
+// LOOPING FLOW
+// FUNCTION FLOW
+// EXCEPTION FLOW
+// ASYNC FLOW
+
+// 1=> SEQUENTIAL FLOW
+
+// CODE LINE BY LINE CHLTA HAI
+
+    console.log("one");
+    console.log("two");
+    console.log("three");
+
+// 2 => CONDITIONAL FLOW
+
+// CONDITION KE BASIC PAR DECISION 
+
+let marks = 22;
+if(marks >= 33){
+    console.log("Pass");
+}else{
+    console.log("fail");
+}
