@@ -83,3 +83,17 @@ try{
 setTimeout(() => {
     console.log("2 second baad")
 }, 2000);
+
+// CONTROL FLOW
+// IF-ELSE
+// ELSE IF
+// SWITCH
+// FOR 
+// WHILE
+// DO WHILE
+// BREAK
+// CONTINUE
+// RETURN
+// TRY CATCH
+// PROMISE
+// ASYNC WAIT
