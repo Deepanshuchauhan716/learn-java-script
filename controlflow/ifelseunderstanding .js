@@ -72,3 +72,39 @@ if(rain){
 }else{
     console.log("no rain")
 }
+
+let age2 = 11;
+if(age >= 18){
+    console.log("vote!!")
+}else{
+    console.log("no vote!!")
+}
+
+
+let password = 1234;
+if(password == "1234admin"){
+    console.log("login")
+}else{
+    console.log("wrong password")
+}
+
+// ================================== ELSE IF ================================
+
+// else if ka matlab hota hai ki agar phli condition false hui to doosri check kro basicaaly else if ka use tabh hota hai jab tumhare pass ek se jaada condition hoti hai
+
+// example =====================
+
+let marks2 = 85;
+
+if(marks2 >= 90){
+    console.log("A")
+}
+else if(marks2 >= 75){
+    console.log("B")
+}
+else if(marks2 >= 50){
+    console.log("C")
+}
+else{
+    console.log("fail");
+}
