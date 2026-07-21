@@ -39,3 +39,36 @@ if(age <= 18){
 // if(undefined)
 // if(NaN)
 
+// MULTIPLE STATEMENT
+
+let name = "roahan";
+let marks = 90
+if(marks >= 30){
+    console.log(`${name} pass`);
+    console.log("congratulation");
+    console.log("next class");
+}
+
+// ====================================NESTED IF==================================
+
+let age1 = 20;
+let hasId = true;
+
+if(age1 >= 18){
+    if(hasId){
+        console.log("entry");
+    }
+}
+
+// ========================================== ELSE ===================================
+
+// else ka matlab hota hai agr if ki condition flase hui to ye code chlao
+// if -> true ke liye 
+// else -> false ke liye
+
+let rain = false;
+if(rain){
+    console.log("rain")
+}else{
+    console.log("no rain")
+}
