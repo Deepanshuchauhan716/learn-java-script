@@ -52,3 +52,34 @@ if(marks >= 33){
 }else{
     console.log("fail");
 }
+
+// 3 => LOOPING FLOW 
+
+for (let i = 0; i<= 5; i++){
+    console.log(i);
+}
+
+// 4 FUNCTIONN FLOW 
+// FUNCTION TABHI CHLEGA JAB USKO CALL HOGA
+
+function hello(){
+    console.log("hello")
+}
+
+hello();
+
+// 5 EXCEPTION FLOW
+// AGAR ERROR AAYA TO PROGRAM KA FLOW BADAL SKTA HAI 
+
+try{
+    console.log(A);
+}catch(err){
+    console.log("error");
+}
+
+// 6 ASYNC FLOW (ADVANCED)
+// YE TAB HOTA HAI JAB KOI KAAM TIME LETA HAI 
+
+setTimeout(() => {
+    console.log("2 second baad")
+}, 2000);
