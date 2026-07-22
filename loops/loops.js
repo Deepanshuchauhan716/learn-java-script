@@ -17,3 +17,13 @@ for(let i = 0; i <= 100; i++){
 }
 
 // this is very simple and easiest way to execute one code more time
+
+// ============================== NEED OF LOOPS ====================
+
+//  1 Repeated work
+//  2 array traversing
+//  3 pattern making
+//  4 print table
+//  5 games
+//  6 data process and etc work
+
