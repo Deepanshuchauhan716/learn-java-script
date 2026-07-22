@@ -80,3 +80,25 @@ do{
     console.log(a)
 } while(a < 5); // condition false thi fir bhi code ek baar chla
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!! BREAK @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+// BREAK LOOP KO TURANT ROK DETI HAI
+
+ for (let i = 1; i<= 10; i++){
+    if(i == 5){
+        break;
+    }
+    console.log(i);
+ }
+
+//  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTINUE !!!!!!!!!!!!!!!!!!!!!!
+// continue current iteration skip kr deta hai
+
+for( let i = 1; i <= 5; i++){
+    if(i == 4){
+        continue;
+    }
+    console.log(i); // 4 print nhi hoga
+}
+
+
