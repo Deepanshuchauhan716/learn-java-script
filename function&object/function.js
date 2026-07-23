@@ -39,3 +39,12 @@ greet();
 greet();
 
 // jitni baar chao utni baar kaam krvao 
+
+// SYNTAX
+
+// FUNCTION SAYhELLO(){
+//    CONSOLE.LOG("HELLO");
+// }
+
+
+
