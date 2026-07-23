@@ -1,2 +1,5 @@
+function NamePrint(name){
+    console.log(`your name is ${name}`)
+}
 
-document.write("Deepanshu")
+NamePrint("Deepanshu") // function calling
