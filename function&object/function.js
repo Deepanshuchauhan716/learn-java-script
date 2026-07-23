@@ -17,3 +17,25 @@
 // JAB CHAI CHAIYE 
 // MAKE TEA() KO CALL KARO
 
+// YAHI SAME KAAM FUNCTION KRTA HAI
+
+// ================================== NEED OF FUNCTION ==================================
+
+// WITH OUT FUNCTION
+console.log("Welcome");
+console.log("How are you ");
+console.log("Enjoy coding"); 
+
+
+// WITH FUCNTION
+
+function greet(){
+    console.log("Welcome1");
+    console.log("How are you 1");
+    console.log("Enjoy coding 1"); 
+}
+
+greet();
+greet();
+
+// jitni baar chao utni baar kaam krvao 
