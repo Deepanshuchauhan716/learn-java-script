@@ -54,4 +54,32 @@ function substract(a,b){
 const result = substract(5,3);
 console.log(result); // 2
 
+// ======================== calling a function ========================
+
+// function ko chlaana ya execute krna hi function calling khlaata hai
+
+function NamePrint(name){
+    console.log(`your name is ${name}`)
+}
+
+NamePrint(deepanshu) // function calling
+
+
+// ########################################### console.log() vs return ##################################3
+
+// console.log() sirf screen me value dikhaata hai
+// return value ko function ke bahar wapas bhejta hai
+
+function add2(){
+    console.log(10 + 20);
+}
+
+add2(); // 30
+
+function add3(a,b){
+    return a + b;
+}
+
+let result1 = add3(2,3);
+console.log(result1);
 
