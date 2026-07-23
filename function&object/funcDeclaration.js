@@ -41,6 +41,27 @@ function add(a,b) { // a aur b parameter hai
 add(2,5);// 2 aur 5 argument hai 
 
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Default parameter !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
+
+// agar function call krte time koi arguument na diya jaaye to function pehle se di hui default vlaue use krta hai
+
+// without default parameter
+function heelo(word){
+    console.log(`hello ${word}`)
+}
+
+heelo(); // hello undefined kyoki koi bhi value pass nhi ki 
+
+// with default parameter
+
+function gello2(name = "guest"){
+    console.log(`hello ${name}`)
+}
+
+gello2(); // hello guest kyoki agar koi parameter nhi hai to default use hoga  aur agr value pass krdo to value hi print hogi na ki default parameter
+
+
+
 // ================================ Return statement ====================================
 
 // return function se value wapas bhejta hai aur function ko immidiatly stop kar deta hai
