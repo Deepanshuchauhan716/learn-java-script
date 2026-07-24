@@ -78,3 +78,16 @@ const fun = {
 
 fun.greet();
 
+// Nested object
+
+const stu = {
+
+    name : "Reshma",
+
+    address : {
+        city : "delhi",
+        country : "India"
+    }
+}
+
+console.log(stu.address.country);
