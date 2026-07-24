@@ -1,5 +1,8 @@
-function NamePrint(name){
-    console.log(`your name is ${name}`)
+let name = "Deepanshu";
+
+function greet(){
+    console.log(name);
 }
 
-NamePrint("Deepanshu") // function calling
+greet();
+console.log(name);
