@@ -131,3 +131,34 @@ const fst = function(){
 }
 
 fst();
+
+
+
+
+// ########################################## ANONYMOUS FUNCTION #################################
+
+// jis function ka apna koi naam nhi hota hai use anonymous function khte hai
+
+// anonymous function = without name
+
+// Basic example
+
+const gues = function(){
+    console.log("Guest");
+}
+
+gues(); // function ka naam nhi blki variable ka naam hai
+//  anonymous function ko variable ke naam se call krte hai
+
+// function(){
+//     console.log("Hello"); // function ka ye part anonymous function khlaata hai
+// }
+ 
+// ################################# NAMED function expression ##################################3
+
+// jab function expression ke andr function ka bhi naam hota hai use named functionn expression kehte hai
+
+const Ex = function hello(){ // Ex variable name hello function name
+    console.log("Ex");
+}
+Ex();
