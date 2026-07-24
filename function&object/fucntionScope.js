@@ -34,3 +34,46 @@ function testlet(){
 }
 
 testlet();
+
+
+// ###########################  GLOABAL SCOPE ###########################33
+// jo variable ya function kisi bhi function ya block ke bahar access kiya jaata hai use global scope khte hai
+
+// global = sbke liye available
+
+// example
+
+let name3= "deepanshu";
+
+function name2(){
+    console.log(name)
+}
+
+name2();
+console.log(name3) // deepanshu // deepanshu kyoki name ek global scope me hai use koi bhi acceess kr skta hai
+
+//  function bhi global scope me ho skta hai''
+
+function hell(){
+    console.log("Hell");
+}
+hell();
+
+// ########################## LOCAL scope ####################
+
+// jo variable kisi function ke andr decalre hota hai use sirf usi function ke andr access kiya ja skta hai ise local ya function scope khte hai
+
+// local = sirf apne ghr(function) ke andr
+
+
+// example 
+
+function example(){
+    let nameD = "Deepanshu";
+    console.log(nameD);
+}
+
+example(); // deepanshu
+
+// nameD sirf example function ke andr exist krta hai agar hum use bhar access krne ki kosis krenge to error aayega
+
