@@ -162,3 +162,59 @@ const Ex = function hello(){ // Ex variable name hello function name
     console.log("Ex");
 }
 Ex();
+
+
+
+// ############################################ ARROW FUNCTION ########################################
+
+// arrow function function expression ko likhne ka ek modern aur chota trika hai
+//  NORMAL function 
+
+const test = function(){
+    console.log("test");
+};
+
+test();
+
+// Arrow function
+
+const test2 = ()=>{
+    console.log("Hello arrow function");
+}
+
+test2();
+
+//  ########### SYNTAX ###############
+
+const functionNam = ()=>{
+    // function body
+};
+
+// ########## example ##########
+
+const kyare = ()=>{
+    console.log("Kya re grib");
+}
+
+kyare();
+
+// ##########  parameter #########3
+
+const nhi = (name) => { // agar ek parameter hai to parantheses hta skte hai
+    console.log(name);
+}
+
+nhi("arush");
+
+//  ####### multiple parameter #########
+
+const multiple = (a,b) => {
+    return a + b;
+}
+
+console.log(multiple(12,12));
+
+// Agar sirf ek expression return kraana ho to
+
+const onereturn = (a,b) => a + b;
+console.log(onereturn(1,2));
