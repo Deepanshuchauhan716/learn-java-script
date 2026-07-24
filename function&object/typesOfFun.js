@@ -56,3 +56,78 @@ function outer(){
 }
 
 outer();
+
+
+
+
+
+
+
+
+
+
+// ############################################## Function expression ##################################3
+
+// function expression jab hum function ko kisi variable me store krte hai use function expression kehte hai
+
+// SYNTAX ######
+
+// data_type variableName = function(){
+    // function body
+// }
+
+// ######## example ##########
+
+const printName = function(){ // isme function ka name kaha hai?? hum ise variable ke name se access kr skte hai
+    console.log("Hello deepanshu");
+}
+
+printName(); // call
+
+// const => variable keyword
+// printName => variable name
+// = => assignment operator
+// function => function keyword
+// () => parantheses
+// {} => function body
+// ; => statement end
+
+// variable ka name use krke hum call kr skte hai function ko
+
+// ############### ek function ko dusre varibale me store krna ##############333
+
+const hello = function(){
+    console.log("hello");
+}
+
+const x = hello;
+x();
+
+// Fucntion expression me parameter
+
+const add = function(a,b){
+    return a + b;
+};
+
+console.log(add(10,20));
+
+
+// Default parameter
+
+const gret = function(name = "User"){
+    console.log(name);
+}
+
+gret();
+gret("Himanshu");
+
+// ################## function expression ke andr function #################
+
+const fst = function(){
+    const second = function(){
+        console.log("Hii");
+    }
+    second();
+}
+
+fst();
