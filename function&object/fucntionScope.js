@@ -77,3 +77,64 @@ example(); // deepanshu
 
 // nameD sirf example function ke andr exist krta hai agar hum use bhar access krne ki kosis krenge to error aayega
 
+// ############################  BLOCK scope ###############
+
+// js me {} ko block scope khte hai
+
+{
+    console.log("Hello");
+
+}
+
+// ye  block scope hai
+// jo variable let ya const se kisi block ke andr declare hota hai use sirf usi block ke nadr access kiya ja skta hai bahar nhi
+
+// Example
+
+{
+    let name = "Deepanshu"
+    console.log(name);
+}
+
+// name sirf block ke andr hi acess kiya ja skta hai agar bhar krne ki kosis krrenge to error aayega
+
+// const bhi ek block scope hai
+
+{
+    const ger = 20;
+    console.log(ger); // 20
+}
+
+// EXCEPTION !!!!!!!! var ek block scope follow nhi krta hai
+
+{
+    var x = 10;
+}
+
+console.log(x); // 10 because var ek global scope hai
+
+// ⭐⭐⭐⭐⭐ LEXICAL SCOPE ⭐⭐⭐⭐⭐
+
+// lexical scope ka matlab hota hai ki code kha likha gya hai
+// js me ek function apne parent (outer) scope ke variable ko access kr skta hai is behaviour ko lexical scope khte hai
+
+// Example
+
+let num = 10;
+
+function outer(){
+    let num1 = 20;
+
+    function inner(){
+         let num2 = 30;
+
+         console.log(num)
+         console.log(num1)
+         console.log(num2)
+    }
+    inner();
+}
+
+outer();
+
+// output = 10,20,30
