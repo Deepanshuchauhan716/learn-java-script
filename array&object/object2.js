@@ -60,4 +60,45 @@ console.log(student);
 // Property exist krti hai ya nhi
 console.log("marks" in student); // true
 
+//  ##########        #################### #####     ###########  object method ######## #################3          ###############33
 
+// jab object ke andr kisi property ki value ek function hoti hai to us function ko method kehte hai
+
+// method = object ke andr waala function
+
+//  1 => NORMAL OBJECT 
+
+const test = {
+    name:"car",
+    model: 2025
+};
+
+// 2 => object method 
+
+const test2 ={
+    car:"BMW",
+
+    greet: function(){
+        console.log("Start");
+    }
+};
+
+//  yaha car ek property hai
+// aur greet ek function hai 
+
+// METHOD KO CALL KAISE KRTE HAI
+test2.greet();
+
+// multiple method
+
+const calculator = {
+    add : function(a,b){
+        console.log(a + b);
+    },
+    sub:function(c,d){
+        console.log(c - d)
+    }
+};
+
+calculator.add(10,20);
+calculator.sub(20,10);
