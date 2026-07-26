@@ -91,3 +91,37 @@ const stu = {
 }
 
 console.log(stu.address.country);
+
+// object ke andr array 
+
+const array = {
+     name : "rohit",
+
+     marks : [12,34,45,67]
+};
+
+console.log(array.marks);
+
+// ##################################################################################### 
+
+const Test = {
+
+    name: "deepanshu",
+    age : 20,
+    city: "delhi",
+    country : "india"
+};
+
+// print key 
+console.log(Object.keys(Test)); // print all keys
+// print value
+console.log(Object.values(Test)); // print all value
+// print both
+console.log(Object.entries(Test)); // print both
+
+// print key help through loop
+
+for(let keys in Test){
+    console.log(keys);
+}
+
