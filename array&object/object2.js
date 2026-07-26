@@ -27,3 +27,34 @@ const student = {
     country:"India"
 };
 
+// name , age , city , country ye sab keys hai and Rohit age city country ye sab  values hai
+
+// how to print object ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+console.log(student);
+
+// kisi ek property ko access krna 
+console.log(student.name);
+
+// multiple propertiess access krna
+console.log(student.age)
+console.log(student.city)
+console.log(student.country)
+
+// ######## property change krna ################
+
+student.age = 30;
+console.log(student.age); // 30
+
+// ########3 new property add krna ###########
+
+student.marks = 20;
+console.log(student);
+
+// ################ property delete krna ########
+
+delete student.age;
+console.log(student);
+
+
+
