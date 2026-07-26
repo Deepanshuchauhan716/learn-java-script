@@ -102,3 +102,33 @@ const calculator = {
 
 calculator.add(10,20);
 calculator.sub(20,10);
+
+
+// ################################### THIS KEYWORD ###########################
+
+// this keyword ek special keyword hota hai jo current object ko refer krta hai
+// this = ye waala object
+
+const thisTest = {
+    name : "Chetan",
+
+    greet: function(){
+        console.log(this.name);//instead of thisTest.name  yaha this ka matlab hai thisTest.name
+    }
+};
+
+thisTest.greet();
+
+const MobileInfo = {
+    name :"Redmi",
+    model : "12 5g",
+
+    showInfo(){
+        console.log(this.name)
+        console.log(this.model);
+    }
+};
+
+MobileInfo.showInfo();
+
+// this ki jrurt isliye pdi kyoki agar future me Student ya object ke variable ka naam badal diya to problem ho skti hai
