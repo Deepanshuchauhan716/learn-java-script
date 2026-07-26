@@ -132,3 +132,41 @@ const MobileInfo = {
 MobileInfo.showInfo();
 
 // this ki jrurt isliye pdi kyoki agar future me Student ya object ke variable ka naam badal diya to problem ho skti hai
+
+
+// ########################################## DESTRUCTURING #######################################################
+
+// obejct ya aray se value ko nikaal kar alag alag variable me store krna hi destructuring kehlaata hai
+// destructuring = packing kholkr samana alg krna
+
+// without Destructuring
+
+const testing = {
+    name : "Himanshi",
+    age:23,
+    city: "Delhi"
+};
+
+const name = testing.name;
+const age = testing.age;
+const city = testing.city;
+
+console.log(name)
+console.log(age)
+console.log(city)
+
+// this is right but lengthy code
+
+//  With destructuring
+
+const Test4 = {
+    name1: "reshma",
+    age1:23,
+    city1:"Dehradun"
+};
+
+const {name1,age1,city1} = Test4; // sirf ek line me value mil gyi
+
+console.log(name1)
+console.log(age1)
+console.log(city1)
