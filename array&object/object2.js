@@ -57,4 +57,7 @@ delete student.age;
 console.log(student);
 
 
+// Property exist krti hai ya nhi
+console.log("marks" in student); // true
+
 
