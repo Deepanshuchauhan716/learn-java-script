@@ -142,7 +142,48 @@
 
     // element ke andr ka text return krta hai chae vo hidden ho ya visible
 
+
+    // * chapter 5 => CSS manipulation
+
+    // java script ki help se elemnet ka color,background,font-size,classes kaise bdlte hai
+
+    // kuch basic topics
+
+    // 1 ===========> style
+
+    // style ki help se js se CSS properties change krte hai
+
+    <h1 id="tittle"></h1>
+
+    const tit = document.getElementById("tittle");
+
+    tit.style.color = "red" // h1 ka color ab red dikega 
+    tit.style.backgroundColor = "black" // background color black dikega
+    tit.style.fontFamily = "Sans-serif" // font change hogi
+
+    //  2 =>>>>>>>>>>>>>>>ClassList
+
+    // kisi element ki css classes ko manage krne ke liye use hota hai
+
+    // css 
+
+    // .red{
+    //   color:red;
+    // }
+
+    // HTML 
+
+    // <h1 id="Tit">Hello</h1> 
+
+    // js
+
+    // tit.classList.add("red") ; ab h1 ki class id ki jgh red class bn jaayegi
+
+    // ========= classList.remove use hota hai class ko remove krne ke liye
+    // ==========classList.toggle use hota hai class hai to remove ke liye agar nhi hai to add krne k liye
+
     
+
 
 
 
