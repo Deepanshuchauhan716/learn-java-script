@@ -71,6 +71,62 @@
     window.prompt("Enter name");
 
     // humesa window likhna jruri nhi hai
+
+        // *************************************** Chapter 3 DOM selector (most important) ****************************** //
+
+ 
+        // selector javascript ko batata hai ki HTML ka konsa element select krna hai //
+
+        //   <h1 id="Text">Hello</h1>
+        //  <h1 class="Text2">Hello1</h1>
+        //  <div>Hello2</div>
+        
+    //  ************ java script ki help se in element,id,class ya tag ko kaise catch kre *************** //
+
+    // is kaam ko hum dom selector ki help se pura krte hai
+
+    // 5 main dom selector in javascript
+
+    //  1 = > getElementById(); id ko catch krne ke liye
+
+    <h1 id="Text">Deepanshu</h1>
+
+    const idTest = document.getElementById('Text'); //ab humne h1 ko catch kr lia jiski id Text hai Id sirf ek element ko assign krte hai 
+
+    // 2 = > getElementByClassName(); class ko catch krne ke liye 
+
+      <h1 class="Text1">Deepanshu</h1>
+
+    const ClassTest = document.getElementsByClassName('Text1'); //ab humne h1 ko catch kr lia jiski class Text1 hai Class multiple element ko assign kr skte hai
+
+    // 3 = > getElementByTagName(); jiske pass na id ho na class to to tag se catch krte hai
+
+    <div>Tag</div>
+
+    const TagName = document.getElementsByTagName('div'); 
+
+    // 4 = > querySelector(); id aur class dono ko catch kr skta hai but id ke liye #IdName and class ke liye .ClassName
+
+    <nav id="Nav"></nav>
+
+    const Query = document.querySelector('#Nav'); // # id ke liye
+
+    <mark class="Mark"></mark>
+
+    const Query1 = document.querySelector('.Mark'); // . class ke liye
+
+    // 5 = > querySelectorAll(); All ka matlba hai jis bhi id ya class ya tag ko select kroge vo sbhi catch ho jaayegi 
+
+    // <h1></h1>
+    // <h1></h1>
+    // <h1></h1>
+
+   const para = document.querySelectorAll('h1') // saare h1 select ho jaayennge
+
+   
+
+
     
-            
+
+        
             
