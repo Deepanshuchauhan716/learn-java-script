@@ -55,6 +55,21 @@
         // DOM TREE => BROWSER KA BNAAYA HAR EK STRUCTURE
 
         
+    // * ********************************** DOM chapter 2 (window object aur document object) ************************************************* //
 
+    // jab hum browser me koi website kholte hai to browser humare liye ek gloabal object bnaata hai //
+
+    // usi object ka naam WINDOW hai
+    // browser ka boss = window
+
+    // example 
+    alert("hello");
+    window.alert("Hello");
+
+    // example 2
+    prompt("Enter your name")
+    window.prompt("Enter name");
+
+    
             
             
