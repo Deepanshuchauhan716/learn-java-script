@@ -70,6 +70,7 @@
     prompt("Enter your name")
     window.prompt("Enter name");
 
+    // humesa window likhna jruri nhi hai
     
             
             
