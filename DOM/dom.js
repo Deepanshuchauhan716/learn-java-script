@@ -123,7 +123,27 @@
 
    const para = document.querySelectorAll('h1') // saare h1 select ho jaayennge
 
+    
    
+   
+   //    **************************************  chapter 4 => Content manipulation (InnerHTML,innerText,TextContent) ************** //
+    // java script ki help se Html element ke andr ka contant badlna ya padna Manipulation kehlaata hai
+
+    // abhi html file me ye text hai 
+    //    <h1 id="test">Welcome world</h1> 
+
+    const heading = document.getElementById("test").innerText = "Deepanshu"; //ab html file me welcome world ki jgh deepanshu dikega
+
+    // innerHtml
+
+    // innerHTML element ke andr ka html content read ya change krta hai
+
+    //Text content
+
+    // element ke andr ka text return krta hai chae vo hidden ho ya visible
+
+    
+
 
 
     
