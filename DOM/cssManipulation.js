@@ -72,5 +72,34 @@ rm.classList.toggle("list") // ab add thi to remove kr dia
 
 div.classList.replace("list","first"); // to div ke andr list replace hoke first add ho gya
 
+ 
 
+// ************************************ GetComputedStyle() **************************************
+
+// getComputedStyle() js ka ek DOM method hai jo kisi bhi HTML element ki final appllied css value deta hai
+
+// browser kisi element par jo final CSS apply krta hai usko dekhne ke liye GetcomputedStyle() use hota hai
+
+// Basic syntax 
+
+                    // window.getComputedStyle(Element) 
+    
+
+                    // .box{
+                    //      height:100px;
+                    //      width:100px;
+                    //     background-color: red;
+                    //   }
+
+// humare pass kuch esi css hai abhi file me but browser bhi default css use krta hai jise hum isi method se dekhte hai !!
+
+let box  = document.querySelector(".box");
+let style = getComputedStyle(box);
+
+console.log(style); // ye saari css ko dikhayega jo browser default use krega
+console.log(style.width) // ye width ko console krega 100px
+console.log(style.height) // ye height ko console krega 100px 
+console.log(style.borderRadius) // 0px
+
+// getComputedStyle() ka use jaadatar dynamic cheezo ke liye hota hai 
 
