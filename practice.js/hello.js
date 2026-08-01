@@ -1,8 +1,2 @@
-let name = "Deepanshu";
-
-function greet(){
-    console.log(name);
-}
-
-greet();
-console.log(name);
+const div = document.querySelector("#boss")
+div.classList.add("list");
