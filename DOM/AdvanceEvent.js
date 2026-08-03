@@ -96,3 +96,28 @@ grandPar.addEventListener("click",function(){
 // ab agr son par click hoga to event bubble hokr uske parent ya grand parent par nhi jaayega aur ese hi parent ke saath hoga
 // this is called stop propagation
 
+
+// ****************************** Event capturing **************************************** //
+// event captiring event bubbling ka ulta hai isme event niche se upper nhi blki upper se nicehe aataa hai
+
+// event capturing ka ek phla phase hai jisme event window se start hokar target element tak phuchta hai
+
+const son = document.querySelector("#son")
+son.addEventListener("click",function(e){
+    alert("son hu me")
+},true)
+
+const parent = document.querySelector("#parent")
+parent.addEventListener("click",function(){
+    alert("parent hu me")
+},true)
+
+const grandPar = document.querySelector("#grandPar")
+grandPar.addEventListener("click",function(){
+    alert("grand parent hu me");
+},true)
+
+//ab agr chlid par click hoga to grand parent ka event phle chlega fir parent fir son
+
+// yhi event capturing hai
+
