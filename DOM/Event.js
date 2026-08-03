@@ -65,4 +65,13 @@ btn.addEventListener("click",()=>{
 // change
 // blur and etc.
 
+const box = document.querySelector("#box")
+const insideBox = document.querySelector("#inBox");
+
+box.addEventListener("dblclick",() => {
+    insideBox.innerHTML = "Hello world";
+})
+
+// ye sb events hote hai!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
