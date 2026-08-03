@@ -117,3 +117,18 @@ box.addEventListener("keydown",(evt) => {
 // preventDefault() 
 // stopPropogation
 // timestamp 
+
+const color = document.querySelector("#color");
+color.addEventListener("click",(evt) => {
+    const para = document.querySelector("#para");
+    para.innerHTML = `
+    <strong>Information about event object</strong><br>
+    target : ${evt.target}<br>;
+    keycode : ${evt.keycode}<br>;
+    key: ${evt.key}<br>;
+    Mouse X: ${evt.clientX}<br>;
+    Mouse Y: ${evt.clientY}<br>;
+    `
+})
+
+// this all information is event object
