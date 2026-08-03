@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #grandPar{
+            height:300px;
+            width:300px;
+            background-color: red;
+        }
+        #parent{
+            height:200px;
+            width:200px;
+            background-color: black;
+        }
+        #son{
+            height:100px;
+            width:100px;
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
     <form id="form">
@@ -12,6 +30,12 @@
     </form>
 
     <a href="https://google.com" id="google">google</a>
+
+    <div id="grandPar">
+        <div id="parent">
+            <div id="son"></div>
+        </div>
+    </div>
 
     <script src="AdvanceEvent.js"></script>
 </body>

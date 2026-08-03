@@ -40,3 +40,34 @@ gog.addEventListener("click",(e) => {
 })
 
 // ye saare brower ke behavior ko stop krne ke liye use hota hai
+
+// ***************************** event bubbling ******************************* //
+
+// jab kisi child par event hota hai to wo event parent ,phit grandparent aur aakhiri me document tak pahuch jaata hai is process ko event bubbling khte hai 
+
+// event humesa niche se upper travel krta hai
+
+const son = document.querySelector("#son")
+son.addEventListener("click",function(){
+    alert("son hu me")
+})
+
+const parent = document.querySelector("#parent")
+parent.addEventListener("click",function(){
+    alert("parent hu me")
+})
+
+const grandPar = document.querySelector("#grandPar")
+grandPar.addEventListener("click",function(){
+    alert("grand parent hu me");
+})
+
+// jab hum sirf son waale div par click kr rhe hai to parent and grand parent waale event bhi apne app chal rhe hai
+
+// ise kehte hai event bubbling ki agar son pe click hoga to parent and grand parent and starting tk phuch jaayega event jabki agar grand parent par click krte hai to sirf usi ka event chlega 
+
+// agr son par click hua to -> parent and grand parent automatic chlenge 
+// agar parent par click hua to -> grand parent par apne app chlega
+// agr grand parent par hua tbh kuch nhi chlega grand parent ke alaava
+
+// this is called bubbling
