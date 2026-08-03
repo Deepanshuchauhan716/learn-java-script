@@ -71,3 +71,28 @@ grandPar.addEventListener("click",function(){
 // agr grand parent par hua tbh kuch nhi chlega grand parent ke alaava
 
 // this is called bubbling
+
+// **************************************** stopPropagation ********************************* //
+
+// Event bubbling ki problem ko solve krta hai stopPropogation
+
+const son = document.querySelector("#son")
+son.addEventListener("click",function(e){
+    e.stopPropagation();
+    alert("son hu me")
+})
+
+const parent = document.querySelector("#parent")
+parent.addEventListener("click",function(){
+    e.stopPropagation();
+    alert("parent hu me")
+})
+
+const grandPar = document.querySelector("#grandPar")
+grandPar.addEventListener("click",function(){
+    alert("grand parent hu me");
+})
+
+// ab agr son par click hoga to event bubble hokr uske parent ya grand parent par nhi jaayega aur ese hi parent ke saath hoga
+// this is called stop propagation
+
