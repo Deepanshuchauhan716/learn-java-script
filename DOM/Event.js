@@ -68,10 +68,52 @@ btn.addEventListener("click",()=>{
 const box = document.querySelector("#box")
 const insideBox = document.querySelector("#inBox");
 
-box.addEventListener("dblclick",() => {
-    insideBox.innerHTML = "Hello world";
-})
+// box.addEventListener("dblclick",() => {
+//     insideBox.innerHTML = "Hello world";
+// })
 
 // ye sb events hote hai!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
+// ***************************** EVENT OBJECT ********************************* //
+
+// event object ek esa object hai jo browser aapko event hone par provide krta hai
+
+// information like *******
+
+// kis element par click hua
+// konsa key press hua
+// mouse ki x/y position kya hai
+// event  kab hua
+box.addEventListener("click",(e)=>{
+    insideBox.innerHTML = `
+    <strong> Event information </strong><br>
+    type : ${e.type}<br>
+    target : ${e.target}<br>
+    mouse X : ${e.clientX}<br>
+    mouse Y : ${e.clientY}<br>
+    `
+})
+
+box.addEventListener("keydown",(evt) => {
+    insideBox.innerHTML = `
+    <strong>key information</strong><br>
+    keycode : ${evt.keycode}
+    key : ${evt.key}
+    `
+})
+
+
+
+// event object ki 10 important properties
+
+// type
+// target 
+// currentTarget
+// clientX
+// clientY
+// key 
+// keyCode
+// preventDefault() 
+// stopPropogation
+// timestamp 
