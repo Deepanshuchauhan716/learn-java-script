@@ -64,6 +64,7 @@ localStorage.removeItem("Name");
 // ********************  4 => localStorage.clear() ******* //
 
 // pura ka pura localStorage ka data hi delete hi kr deta hai
+localStorage.clear();
 
 // ******************** 5 => key() ********************* //
 
@@ -74,4 +75,42 @@ console.log(localStorage.key(0));
 // 6 => length
 
 // length btata hai ki kitni keys hai
+
 console.log(localStorage.length);
+
+
+// ************* HOW TO STORE OBJECT ************* //
+
+// localStorage me object directly store nhi hote kyoki localstorage me strig store hote hai
+
+const user = {
+    name : "Deepanshu",
+    gmail : "deepanshu@gmail.com"
+};
+
+//localStorage.setItem("user",user); // output aayega [object object]
+
+// isliye hum use krte hai stringify() ka 
+// stringify object ko string me convert kr deta hai aur uske baad localstorage me save krta hai
+
+const str = JSON.stringify(user);
+console.log(typeof user); // object
+
+// store array
+
+let fruit = ["apple","mango","litchi"];
+localStorage.setItem("fruit",JSON.stringify(fruit));
+
+// isliye stringify ka use krte hai taaki jab humare pass bda data ho store krne ke liye to hum use store kr ske
+
+// ************************ JOSN.parse() ********************************* //
+
+// JSON.parse() string ko object me convert krta hai
+
+// ab agar appko actual data type waapis chaiye kyoki aapka data to localStorage me string form me store hua hai but aapko actual data type chaiye
+
+
+let data1 = JSON.parse(localStorage.getItem("fruit"));
+console.log(data1);// ab aapko actual array return hoga
+
+// isliye parse() ka use hota hai
