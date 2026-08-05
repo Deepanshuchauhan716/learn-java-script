@@ -28,3 +28,18 @@ let student = ["Rohit","chetan","Deepanshu","Anu"];
 
 // index humesa 0 se shuru hota hai  isliye phli value ka index humesa 0 hota hai
 
+
+// *************************** ACCESS ARRAY  ********************************* // 
+
+// access ka  matlab hota hai kisi value tak phuchna ya use lena
+
+let access =  ["first","Second","third"];
+// maanlo tumhe first chaiye to tum use kaise access kroge to hum array ko access krne ke use krte hai unki index value
+
+console.log(access[0]); // first ko acess kr skte hai 
+console.log(access[1]); // second ko acess kr skte hai 
+console.log(access[2]); // third ko acess kr skte hai 
+
+
+// aise hum array ke andr ke value ko access krte hai //
+
