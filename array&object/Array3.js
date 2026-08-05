@@ -69,4 +69,43 @@ console.log(count.length); // 5
 
 // is trh se hum kisi array ki length ka pta lgaate hai
 
+// *************************************** ARRAY TYPES ************************ //
+
+// java script me array ko kai trah se classify kiya ja skta hai basic level par ye types sbse common hote hai 
+
+// 1 => One dimensional array
+
+// isme value ek hi line me hoti hai 
+
+let Val = ["10","20","30","40","50"]; //this is called one dimensional array
+
+
+
+// 2 => Two dimensional Array
+
+// isme array ko row and column ki form me store krte hai 
+
+let matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]; // ise two dimensional array kehte hai 
+
+
+
+// 3 => multi dimensional array
+
+// jab 2D se bhi jaada level hote hai (3d,4d,etc) use multidimensional array kehte hai
+
+let data =[
+    [
+        [1,2],
+        [3,4]
+    ],
+    [
+        [5,6],
+        [7,8]
+    ]
+] // ise multi dimensional array kehte hai
+
 
