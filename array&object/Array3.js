@@ -179,3 +179,16 @@ for(let i = 0; i < fuck.length; i++) {
 } // this is simple and easy to print all values
 
 // This is for loop 
+
+// ************************************* For of loop *********************************************** //
+
+// for of loop js ka ek special loop hai jo array ki values ko directly ek ek  krke deta hia isme hume index value ki need nhi hoti
+
+for(let fu of fuck){
+    console.log(fu); // fu ke andr aapke fuck array ki saari value ek ek krke aati hai aur fir console hoti hai
+}
+
+let fur = ["Apple","Banana","Grapes","litchi","Kela"];
+for(let fruit of fur){
+    console.log(fruit); // fruit ke andr aapki fur array ki saari value ek ek krke aati hai aur code execute hota hai
+}
