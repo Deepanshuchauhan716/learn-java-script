@@ -36,10 +36,23 @@ let student = ["Rohit","chetan","Deepanshu","Anu"];
 let access =  ["first","Second","third"];
 // maanlo tumhe first chaiye to tum use kaise access kroge to hum array ko access krne ke use krte hai unki index value
 
-console.log(access[0]); // first ko acess kr skte hai 
-console.log(access[1]); // second ko acess kr skte hai 
-console.log(access[2]); // third ko acess kr skte hai 
+// console.log(access[0]); // first ko acess kr skte hai 
+// console.log(access[1]); // second ko acess kr skte hai 
+// console.log(access[2]); // third ko acess kr skte hai 
 
 
 // aise hum array ke andr ke value ko access krte hai //
 
+// ********************************* UPDATE ARRAY **************************** //
+
+// update ka matlab hota hai pehle se present value ko badalna 
+// maanlo value hai "Rahul" aur tum use krna chate ho "Rohit" to kaise krenge
+
+let new_student = ["Anuu","Deepanshu","Reshma","Rohit"];
+console.log(new_student);//without update
+
+// ab agar hum chate hai ki Rohit ki jgh chetan aa jaaye to kaise krenge
+// hum use krenge index value ka 
+
+new_student[3] = "Chetan";
+console.log(new_student); // ab rohit ki jgh chetan aayega ese hum kisi value ko update kr skte hai
