@@ -56,3 +56,17 @@ console.log(new_student);//without update
 
 new_student[3] = "Chetan";
 console.log(new_student); // ab rohit ki jgh chetan aayega ese hum kisi value ko update kr skte hai
+
+
+
+// ********************************* LENGTH ********************************** //
+// length java script me array ki total value ki counting hoti hai 
+
+let count = ["Hello","World","How","Are","You"];
+// ab agar tumhe pta lgaana hai ki kitne element hai to length method ka use krte hai 
+
+console.log(count.length); // 5
+
+// is trh se hum kisi array ki length ka pta lgaate hai
+
+
