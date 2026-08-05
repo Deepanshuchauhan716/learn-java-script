@@ -109,3 +109,50 @@ let data =[
 ] // ise multi dimensional array kehte hai
 
 
+// ****************************** push() ,pop() ,shift(),unshift() ***************************** //
+
+// push() java script ka array method hai jo array ke end me ek ya ek se jyaada values add krta hai
+
+let push = ["one","two","three"];
+console.log(push); // one two three
+push.push("four");
+console.log(push); // one tow three four
+
+let number = [1,2,3];
+console.log(number);// 1 2 3
+number.push(4,5,6);
+console.log(number); //1 2 3 4 5 6 
+
+// This is called push method
+
+// pop() bhi js me ek array method hai jo array ke last se ek element ko remove karta hai
+
+let popMethod = ["Hello","World","Welcome"];
+console.log(popMethod);// Helllo World Welcome
+popMethod.pop();
+console.log(popMethod); // Hello World
+
+// pop method me value isliye nhi daalte kyoki ye automatic hi last value hi delete krta hai 
+
+// this is called pop method
+
+// shift() js ka ek array method hai jo array ke shuru se ek element delete krta hai
+
+let names = ["Hii","Coder","How"];
+console.log(names); // Hii Coder How
+names.shift();
+console.log(names); // Coder How
+
+// starting se element delete krta hai first element
+
+// this is called shift()
+
+// unshift() js ka ek array method hai jo array ke shuru me ek ya ek se jyaada element ad krta hai
+
+let us = ["html","css","js","python"];
+console.log(us); // "html","css","js","python"
+us.unshift("go","github");
+console.log(us); // "go","github","html","css","js","python"
+
+// elements ko starting me add krta hai ek ya ek se jyaada
+
