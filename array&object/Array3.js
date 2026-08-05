@@ -156,3 +156,26 @@ console.log(us); // "go","github","html","css","js","python"
 
 // elements ko starting me add krta hai ek ya ek se jyaada
 
+// ******************************** For Loop ************************************** // 
+
+// loops ka matlab hai eki code ko jitni baar chae exexute kraana jiske liye looops ka use krte hai 
+// Array me for loops ka use isliye krte hai ki jab aapke pass bahut saari values ho to har value ko console krna uski index value ki help se bad practice and difficult work hai isliye hum for loop ka use kret hai aarray ki values ko print krvaane ke liye
+
+// without for loop
+
+let fuck = ["my","name","is","Deepanshu","chauhan"];
+console.log(fuck[0]);
+console.log(fuck[1]);
+console.log(fuck[2]);
+console.log(fuck[3]);
+console.log(fuck[4]);
+
+// ese me saari value to print ho jaayegi par code lengthy ho jaayega aur baar baar index value bhi bdlni pdegi
+
+// with for loop
+
+for(let i = 0; i < fuck.length; i++) {
+    console.log(fuck[i]);
+} // this is simple and easy to print all values
+
+// This is for loop 
