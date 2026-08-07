@@ -192,3 +192,31 @@ let fur = ["Apple","Banana","Grapes","litchi","Kela"];
 for(let fruit of fur){
     console.log(fruit); // fruit ke andr aapki fur array ki saari value ek ek krke aati hai aur code execute hota hai
 }
+
+
+// ********************************** MAP() *************************************************** //
+
+// map() js ka ek array method hai jo array ke har element par ek function chlaata hai aur ek new array return krta hai
+
+// original array ko change nhi krta hai
+
+// syntax
+
+// arrayName.map(function(element){
+//     return new value
+// })
+
+let num = [1,2,3,4,5,6,7];
+
+let result = num.map((n) =>{
+    return n * 2;
+})
+
+console.log(result); // 2 4 6 7 10 12 14
+// map ne har element ko 2 se multiply kr diya 
+
+// new array return kiya 
+
+// this is called map 
+
+// 
