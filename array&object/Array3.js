@@ -219,4 +219,27 @@ console.log(result); // 2 4 6 7 10 12 14
 
 // this is called map 
 
-// 
+// ***************************************** Filter() *************************************** //
+
+// map() array me se sirf un element ko select krke ek new array bnaata hai jo given condition ko satisfy karte hai '
+
+let newNumber = [1,2,3,4,5,6,7,8,9];
+
+let res = newNumber.filter((n) => {
+    return n < 5;
+});
+
+console.log(res); // 1 2 3 4
+
+// filter original array ko change nhi krta hai
+
+let age = [12,45,67,43,13,56];
+let adult = age.filter((age) => {
+    return age > 20;
+})
+
+console.log(adult); //  45, 67, 43, 56 
+
+// simple filter ek new array bnaata hai aur us array me vo element ko rkhta hai jo condition ko satisfy krte hai
+
+// this is called filter
