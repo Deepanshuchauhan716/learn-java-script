@@ -243,3 +243,38 @@ console.log(adult); //  45, 67, 43, 56
 // simple filter ek new array bnaata hai aur us array me vo element ko rkhta hai jo condition ko satisfy krte hai
 
 // this is called filter
+
+// ******************************** reduce() ******************************** //
+
+// reduce() array ke saare element ko process krke unse usually ek singl final value bnaata hai
+
+let redu = [10,20,30,40,50];
+let result3 = redu.reduce((total,add) => {
+    return total + add;
+},0);
+
+console.log(result3) // 150
+
+// total = 0
+// 0 + 10 = 10;
+// 10 + 20 = 30
+// 30 + 30 = 60;
+// 60 + 40 = 100
+// 100 + 50 = 150;
+
+// final ans = 150;
+
+// isme 2 cheeze hoti hai 
+
+// 1 => accumulator
+// ye result ko smbhla ke rkhta hai isko tum total,sum,result kuch bhi naa de skte ho
+
+// 2 => current value 
+
+// isme array ki current value store hoti hai
+// inital value 0 hai 
+
+
+// means accumulator ki initial value 0 hai 
+
+// this is called reduce() 
