@@ -277,4 +277,5 @@ console.log(result3) // 150
 
 // means accumulator ki initial value 0 hai 
 
-// this is called reduce() 
+// this is called reduce()
+
