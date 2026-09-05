@@ -98,9 +98,9 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items:center;
+            align-items: center;
             opacity: 0;
-
+            visibility: hidden;
         }
 
         form {
@@ -118,33 +118,40 @@
             width: 300px;
         }
 
-        .form_container{
-            flex-direction: column; 
-            height:450px;
-            width:400px;
+        .form_container {
+            flex-direction: column;
+            height: 450px;
+            width: 400px;
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 20px;
-            opacity: 0;
+            /* opacity: 0; */
         }
 
-        button{
+        button {
             margin-top: 20px;
             height: 40px;
         }
-        .cut{
+
+        .cut {
             position: relative;
             bottom: 50px;
-            left:170px;
+            left: 170px;
             font-size: 20px;
             cursor: pointer;
         }
 
-        .note{
+        .note {
             font-size: 20px;
             font-weight: bold;
+        }
+
+        .popup.show {
+            opacity: 1;
+            visibility: visible;
+            transition: 0.5s;
         }
     </style>
 </head>
@@ -163,7 +170,7 @@
         </div>
     </div>
     <div id="container">
-        <div class="boxes">Add note +</div>
+        <div class="boxes" id="addNewNote">Add note +</div>
         <div class="boxes">This is a tittle
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, aliquam blanditiis saepe dolor
                 fugiat mollitia quae ipsa eos eaque vitae commodi quibusdam odio voluptate ipsum earum necessitatibus!
@@ -180,5 +187,6 @@
 
     </div>
 </body>
+<script src="NotesApp.js"></script>
 
 </html>
