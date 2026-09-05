@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(104, 88, 213);
+            /* margin: 40px; */
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+
+        .boxes {
+            height: 250px;
+            width: 250px;
+            background-color: white;
+        }
+
+        .boxes:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .boxes:nth-child(2) {
+            font-weight: bold;
+            font-size: 20px;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        span {
+            display: block;
+            margin-top: 15px;
+            font-weight: 100;
+            font-size: 15px;
+        }
+
+        p {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        #editor {
+            cursor: pointer;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+        }
+
+        .edit_btn {
+            background-color: rgb(169, 221, 169);
+            height: 60px;
+            width: 100px;
+            list-style: none;
+            position: relative;
+            bottom: 100px;
+            left: 100px;
+            font-weight: 200;
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="boxes">Add note +</div>
+        <div class="boxes">This is a tittle
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, aliquam blanditiis saepe dolor
+                fugiat mollitia quae ipsa eos eaque vitae commodi quibusdam odio voluptate ipsum earum necessitatibus!
+                Modi, sint rerum?</span>
+            <div class="bottom">
+                <p>september,5,2026</p>
+                <div id="editor">...</div>
+            </div>
+            <div class="edit_btn">
+                <li>Edit</li>
+                <li>Delete</li>
+                <span class="colour"></span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
