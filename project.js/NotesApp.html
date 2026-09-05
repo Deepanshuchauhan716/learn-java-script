@@ -98,7 +98,9 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items:center;
+            opacity: 0;
+
         }
 
         form {
@@ -115,6 +117,35 @@
             height: 200px;
             width: 300px;
         }
+
+        .form_container{
+            flex-direction: column; 
+            height:450px;
+            width:400px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            opacity: 0;
+        }
+
+        button{
+            margin-top: 20px;
+            height: 40px;
+        }
+        .cut{
+            position: relative;
+            bottom: 50px;
+            left:170px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .note{
+            font-size: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -122,10 +153,12 @@
 
     <div class="popup">
         <div class="form_container">
-            <p>Add new note</p>
+            <p class="note">Add new note</p>
+            <span class="cut">×</span>
             <form action="#">
                 <label>Tittle</label><input type="text">
                 <label>Description</label><textarea name="" id=""></textarea>
+                <button>Add note</button>
             </form>
         </div>
     </div>
