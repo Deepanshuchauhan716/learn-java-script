@@ -19,9 +19,10 @@ cut.addEventListener("click", function () {
     popup.classList.remove("show");
 });
 
-noteform.addEventListener("submit",(event) => {
-    event.preventDefault();
+let editingNote = null;
 
+noteform.addEventListener("submit",(event) => {
+    
     let tittle = tittleinp.value
     let discription = discriptioninp.value;
 
@@ -29,6 +30,23 @@ noteform.addEventListener("submit",(event) => {
         alert("please fill the tittle and discription");
         return;
     }
+
+    event.preventDefault();
+
+    if (editingNote !== null) {
+
+    editingNote.querySelector("h3").textContent = tittle;
+    editingNote.querySelector("span").textContent = discription;
+
+    editingNote = null;
+
+    tittleinp.value = "";
+    discriptioninp.value = "";
+    popup.classList.remove("show");
+
+    return;
+}
+
 
     let newNote = document.createElement("div");
     newNote.classList.add("boxes");
@@ -66,6 +84,9 @@ noteform.addEventListener("submit",(event) => {
         let edit = newNote.querySelector(".edit_pop");
 
         edit.addEventListener("click",() => {
+
+            editingNote = newNote;
+
             let oldTittle = newNote.querySelector("h3").textContent;
             let oldDiscription = newNote.querySelector("span").textContent;
 
