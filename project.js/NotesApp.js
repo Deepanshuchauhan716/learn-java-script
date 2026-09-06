@@ -7,9 +7,6 @@ let discriptioninp = document.getElementById("discription_input")
 let noteform = document.getElementById("noteForm");
 let container = document.getElementById("container");
 
-
-
-
 addNote.addEventListener("click", function () {
     popup.classList.add("show");
 });
@@ -22,7 +19,7 @@ cut.addEventListener("click", function () {
 let editingNote = null;
 
 noteform.addEventListener("submit",(event) => {
-    
+
     let tittle = tittleinp.value
     let discription = discriptioninp.value;
 
@@ -45,7 +42,7 @@ noteform.addEventListener("submit",(event) => {
     popup.classList.remove("show");
 
     return;
-}
+   }
 
 
     let newNote = document.createElement("div");
@@ -96,7 +93,13 @@ noteform.addEventListener("submit",(event) => {
             popup.classList.add("show");
              editBtn.classList.toggle("shows");
 
-        })
+        });
+
+       let deleteBtn = newNote.querySelector(".delete");
+
+       deleteBtn.addEventListener("click",() => {
+        newNote.remove();
+       })
 
 });
         

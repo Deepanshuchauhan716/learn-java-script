@@ -23,10 +23,11 @@
         }
 
         #container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 35px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 250px);
+            /* justify-content: space-between; */
+            justify-content: center;
+            gap: 30px;
         }
 
         .boxes {
@@ -35,6 +36,8 @@
             background-color: white;
             box-sizing: border-box;
             padding: 15px;
+            overflow-y: auto;
+            flex-shrink: 0;
         }
 
 
@@ -108,26 +111,42 @@
             flex-direction: column;
         }
 
+        .form_container {
+            width: clamp(280px, 60vw, 400px);
+
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 20px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
         input {
-            height: 30px;
-            width: 300px;
+            height: 40px;
         }
 
         textarea {
+            width: 100%;
             height: 200px;
-            width: 300px;
-        }
-
-        .form_container {
-            flex-direction: column;
-            height: 450px;
-            width: 400px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-            /* opacity: 0; */
+            box-sizing: border-box;
+            overflow-y: auto;
+            resize: none;
         }
 
         button {
@@ -154,7 +173,7 @@
             transition: 0.5s;
         }
 
-        .edit_btn.shows{
+        .edit_btn.shows {
             opacity: 1;
             visibility: visible;
         }
