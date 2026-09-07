@@ -48,3 +48,5 @@ export function add(a,b){
 // ├── user.js       → users
 // ├── api.js        → API
 // └── main.js       → main code
+
+// Module = code ko alag files me divide karke, export aur import ke through ek file ka code doosri file me use karna.
