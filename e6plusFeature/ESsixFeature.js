@@ -60,3 +60,20 @@ let fruit2 = ["Grapes","litchi","Gwawa"];
 
 let allFruit = [...fruit1,...fruit2];
 console.log(allFruit);
+
+// iska use array me bhut se cases me hota hai
+
+// 🔹 Object me bhi Spread Operator ----------------------------
+
+let stu = {
+    name : "Deepanshu",
+    class: "bca",
+    Roll_no : 259123
+};
+
+let newStu = {
+    ...stu,
+    "course" : "MCA"
+};
+
+console.log(newStu);
