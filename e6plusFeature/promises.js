@@ -69,3 +69,17 @@ promise.catch(() => {
 // .catch() ka matlab:
 
 // "Agar Promise fail ho jaye, ye kaam karna."
+
+// Login request
+//      ↓
+//    Promise
+//      ↓
+//    Pending ⏳
+//      ↓
+// Server ka response
+//      ↓
+//  ┌───────────────┐
+//  ↓               ↓
+// Login success   Login failed
+//  ↓               ↓
+// resolve()       reject()
