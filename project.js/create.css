@@ -18,6 +18,12 @@ body{
   padding: 10px 20px;
 }
 
+.auth-child{
+    font-size: 14px;
+    color: rgb(48, 43, 43);
+    font-weight: 550;
+}
+
 .login-form{
     width: 100%;
     display: flex;
@@ -46,20 +52,52 @@ body{
 }
 
 .form-group{
+    position: relative;
+    top:20px;
     display: flex;
     flex-direction: column;
     gap: 16px;       
-    margin-top: 20px;          
+    margin-top:10px;          
 }
 
 input{
+    position: relative;
+    bottom: 10px;
     height:40px;
     border-radius: 30px;
     border: none;
+     background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); 
+     border: 2px solid rgba(69, 19, 19, 0.3); 
+     padding-left: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 label{
     position: relative;
-    top:10px;
+    top:4px;
+    left: 10px;
 }
 
+.create-btn{
+    padding:12px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color:#004bfa;
+    width: 90%;
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+}
+
+.specific{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc{
+    display: flex;
+    align-items: center;
+}
