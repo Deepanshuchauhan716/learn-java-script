@@ -6,14 +6,14 @@ function getUser(){
 }
 btn.addEventListener("click",(Currentuser) => {
 
-   const Currentuser = getUser();
-   
-   if(Currentuser){
+   const currentuser = getUser();
+
+   if(currentuser){
     window.location.href = "dashbaord.html";
     return;
    }
 
-   const user = localStorage.getItem(users);
+   const users = localStorage.getItem("users");
    
    if(users){
     window.location.href = "login.html";
