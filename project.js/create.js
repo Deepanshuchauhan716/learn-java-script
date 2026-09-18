@@ -29,6 +29,17 @@ function usersExist(userNameVal,emailVal){
 
 }
 
+// add new user on localstorage
+function Adduser(newUser){
+    // localstorage se users waala array nikaao
+    const stored = localStorage.getItem("users");
+    const users = stored ? JSON.parse(stored) : [];
+
+    users.push(newUser);
+    localStorage.setItem("users",JSON.stringify(users));
+}
+
+
 signUp.addEventListener("submit",(e) =>{
     e.preventDefault(); // page reload hone se rokta hai
 
@@ -46,10 +57,12 @@ signUp.addEventListener("submit",(e) =>{
     const emailPattern =   /^[^\s@]+@gmail\.com$/;
     if(!emailPattern.test(emailVal)){
         alert("Enter Valid Email");
+        return;
     }
 
     if(passVal !== confPassVal){
         alert("Enter Same password in password field");
+        return;
     }
 
     if(usersExist(userNameVal,emailVal)){
@@ -57,14 +70,16 @@ signUp.addEventListener("submit",(e) =>{
         return;
     }
 
-    usersObj = {
+    const usersObj = {
         username : userNameVal,
         email : emailVal,
         password : passVal
     };
 
+    Adduser(usersObj);
+    localStorage.setItem("Currentuser",JSON.stringify(usersObj));
 
+    window.location.href = "dashbaord.html";
 
-    console.log(userNameVal,emailVal,passVal,confPassVal);
 
 })
