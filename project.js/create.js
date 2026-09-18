@@ -5,6 +5,30 @@ const email = document.getElementById('email');
 const passWord = document.getElementById('password');
 const confPass = document.getElementById('conforim');
 
+// user exist or not function 
+
+function usersExist(userNameVal,emailVal){
+
+    const stored = localStorage.getItem("users")
+
+    if(!stored){
+        return false;
+    }
+    const users = JSON.parse(stored);
+
+    const found = users.find(user => {
+        return user.username === userNameVal || user.email === emailVal;
+    })
+
+    if(found){
+        return true;
+    }else{
+        return false;
+    }
+
+
+}
+
 signUp.addEventListener("submit",(e) =>{
     e.preventDefault(); // page reload hone se rokta hai
 
@@ -16,6 +40,7 @@ signUp.addEventListener("submit",(e) =>{
 
     if(userNameVal == ""|| emailVal == "" || passVal== "" || confPassVal == ""){
         alert("Please fill the form");
+        return;
     }
 
     const emailPattern =   /^[^\s@]+@gmail\.com$/;
@@ -23,11 +48,22 @@ signUp.addEventListener("submit",(e) =>{
         alert("Enter Valid Email");
     }
 
-    const passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    if(!passPattern.test(passVal)){
-        alert("Password must be at least 8 characters and contain uppercase, lowercase, number and special character");
+    if(passVal !== confPassVal){
+        alert("Enter Same password in password field");
+    }
+
+    if(usersExist(userNameVal,emailVal)){
+        alert("user already exist");
         return;
     }
+
+    usersObj = {
+        username : userNameVal,
+        email : emailVal,
+        password : passVal
+    };
+
+
 
     console.log(userNameVal,emailVal,passVal,confPassVal);
 
