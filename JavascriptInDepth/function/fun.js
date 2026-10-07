@@ -130,3 +130,51 @@ function Default(name1 = "guest"){
 }
 
 Default();//agar argument doge to vhi console hoga nhi to default value guest print hoga
+
+// 4. Rest Parameters
+
+function sum(...number){
+    return number.reduce((a,b) => a+b,0);
+}
+
+console.log(sum(1,2,3,4,5)) // output => 15
+
+// Example 6: Multiple Returns
+
+function CheckAge(age){
+    if(age < 18){
+        return "Minor";
+    }
+    return "Aduly"
+}
+
+console.log(CheckAge(14));
+
+// Example 7: Nested Functions
+
+function outer(){
+    function inner(){
+        console.log("inner");
+    }
+    inner();
+}
+
+outer();
+
+// Example 8: Function Ke Andar Function
+
+function calculate(a,b){
+    function addition(){
+        return a + b;
+    }
+    function multiply(){
+        return a * b;
+    }
+
+    return {
+        sum :addition(),
+        product:multiply()
+    };
+}
+
+console.log(calculate(2,3));
