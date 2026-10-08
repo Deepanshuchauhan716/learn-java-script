@@ -178,3 +178,117 @@ function calculate(a,b){
 }
 
 console.log(calculate(2,3));
+
+
+// 🧠 ~~~~~~~~~~~~~~~~~~Function Expression Kya Hai?
+// Part 1: Ek Line Mein
+// Function Expression = Function ko ek VARIABLE mein store karna.
+
+// Part 2: Syntax
+// js
+const greet = function() {
+  console.log("Hello");
+};
+
+greet(); // "Hello"
+// Dekha?
+
+// const greet → variable
+
+// = function() {} → function variable mein store ho gaya
+
+// Yahi Function Expression hai.
+
+// Part 3: Function Declaration vs Function Expression
+// Function Declaration:
+// js
+function greet() {
+  console.log("Hello");
+}
+greet();
+// function keyword sabse pehle
+
+// Naam greet function ke saath juda hua
+
+// Function Expression: 
+// js
+const greet = function() {
+  console.log("Hello");
+};
+greet();
+// function keyword variable ke baad
+
+// Function ka apna naam nahi (anonymous)
+
+// Variable ka naam greet use hota hai
+
+// Function Declaration → Poora Hoisted
+// js
+greet(); // ✅ "Hello"
+
+function greet() {
+  console.log("Hello");
+}
+// Pehle call kar sakte ho — kyunki function poora memory mein aa gaya.
+
+// Function Expression → Sirf Variable Hoisted
+// js
+greet(); // ❌ TypeError
+
+const greet = function() {
+  console.log("Hello");
+};
+// Pehle call nahi kar sakte — kyunki sirf variable hoisted hai, function baad mein assign hota hai.
+
+// Part 1: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Arrow Function Kya Hai?~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Arrow Function = Function likhne ka short tarika (ES6, 2015).
+
+// Purana tarika:
+
+// js
+const greet = function() {
+  console.log("Hello");
+};
+// Naya tarika (arrow function):
+
+// js
+const greet = () => {
+  console.log("Hello");
+};
+// Dekha? function keyword hata, => (arrow) laga diya.
+
+// Part 2: Syntax Ke 3 Forms
+
+// Form 1: No Parameters
+// js
+
+const greet = () => {
+  console.log("Hello");
+};
+// () → parameters (khaali)
+
+// => → arrow
+
+// { } → body
+
+
+// Form 2: One Parameter (Parentheses Optional)
+// js
+const greet = name => {
+  console.log("Hello " + name);
+};
+// Ya:
+
+// js
+const greet = (name) => {
+  console.log("Hello " + name);
+};
+// Dono same hain. Ek parameter ke liye () optional hai.
+
+// Form 3: Multiple Parameters (Parentheses Required)
+js
+const add = (a, b) => {
+  return a + b;
+};
+// Multiple parameters ke liye () zaroori hai.
