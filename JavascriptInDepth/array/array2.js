@@ -80,3 +80,68 @@ console.log(arr3);
 // Example 4: Sirf Start Dena (Last Tak Delete)
 arr3.splice(1);
 console.log(arr3);
+
+// Concat()!~~~~~~~~~~~~~~~~~~~~`````
+
+// Pehle Ek Line Me
+// concat() = jodna (merge karna). Do ya zyada arrays ko jod kar naya array banata hai. Original nahi badalta.
+
+// Syntax
+// js
+// array1.concat(array2, array3, ...)
+
+const res3 = arr1.concat(arr2);
+console.log(res3);
+
+// teen array jodna
+
+const res4 = arr1.concat(arr2,arr3);
+console.log(res4);
+
+// Example 3: Values Bhi Jod Sakte Ho
+const arr4 = [1,2,3,4,5];
+const res5 = arr4.concat(6,7,8,9,10);
+console.log(res5);//1 2 3 4  5 6 7 8 9 10
+
+// Ab String Pe concat()
+const str1 = "Hello ";
+const str2 = "world";
+console.log(str1.concat(str2)); // Hello world
+
+
+// join() ~~~~~~~~~~~~~~~~~~~~~~`
+// Pehle Ek Line Me
+// join() = array ke saare items ko jod kar ek string bana deta hai. Beech me separator daal sakte ho.
+
+// Naam se yaad rakho: Join = "jodna" — lekin string banane ke liye.
+
+// Syntax
+// js
+// array.join(separator)
+
+let arr5 = ["Hello","World","I am","JS"];
+const res6 = arr5.join();
+console.log(res6);
+console.log(typeof res6); // string instead of array
+
+console.log(arr5.join(" and ")); // Hello and World and I am and JS
+
+// indexof / includes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Pehle Ek Line Me
+// indexOf() = dhoondho, aur position (index) batao. Nahi mila to -1.
+
+// includes() = dhoondho, aur haan/nahi (true/false) batao.
+
+// 1️⃣ indexOf() — Position Dhoondho
+
+const arr6 = ["MY","name","Is","Hritik","Roshan"];
+console.log(arr6.indexOf("Hritik",0));
+
+console.log(arr6.indexOf("name",2)); //-1 kyoki starting index 2 hai jbki name to 1 pe hai
+
+// 2️⃣ includes() — Hai Ya Nahi?
+
+console.log(arr6.includes("Hritik")); // only two values get true aur false
+
+
