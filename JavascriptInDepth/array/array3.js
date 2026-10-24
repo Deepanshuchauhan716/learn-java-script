@@ -133,4 +133,15 @@ const Blocked = InstaUser.filter((IUsers) => {
 
 console.log(Blocked);
 
+// Pehle Ek Line Me
+// reduce() = poore array ko ek value me badal do. Jaise saare numbers ka sum, ya max, ya string — kuch bhi ek.
+
+const digit = [1,2,3,4,5,6,7,8];
+const sum1 = digit.reduce((total,num) => {
+    return total + num;
+},0);
+
+console.log(sum1);
+// original array nhi change hota hai
+
 
