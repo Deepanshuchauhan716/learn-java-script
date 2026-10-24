@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <h1 id="Heading">Hello Deepanshu</h1>
+    <p id="Paragraph">Iam javaScript</p>
+    <h2 class="first">Hey youuu</h2>
+    <h2 class="first">I am hero</h2>
+    <!-- JavaScript se DOM ke through tum:
+
+    h1 ka text badal sakte ho
+
+    p ko hide kar sakte ho
+
+    Naya element add kar sakte ho -->
+
+<script>
+
+            //  Level 2: Element Select Karna (Sabse Important)
+            //     JavaScript se HTML element ko pakadna — iske bina kuch nahi kar sakte.
+
+            //     1. getElementById() — ID se
+
+    let heading = document.getElementById("Heading"); // us element ko catch kr liya jiski is heading hai
+    console.log(heading);
+    // Sirf ek element return karta hai (kyunki ID unique hoti hai).
+
+             // 2. querySelector() — CSS selector se (pehla match)
+    let para = document.querySelector("#Paragraph");
+    console.log(para);
+
+            //  3. querySelectorAll() — Saare matches
+    let hello = document.querySelectorAll(".first");
+    console.log(hello[0]);
+    console.log(hello[1]);
+    console.log(hello);
+
+    // NodeList return karta hai (array jaisa).
+
+    // 4. getElementsByClassName() — Class se
+    let class1 = document.getElementsByClassName(".first");
+    console.log(class1);
+    // HTMLCollection return karta hai.
+
+    // 5. getElementsByTagName() — Tag se
+
+    let head = document.getElementsByTagName("p");
+    console.log(head);
+
+
+
+
+</script>
+</body>
+</html>
+
+<!-- Level 0: DOM Kya Hai?
+Ek line mein:
+
+DOM = Tumhare HTML page ka JavaScript se control karne ka tarika.
+
+ Full form: Document Object Model
+
+Real life: Socho tumhara HTML page ek ghar hai. DOM us ghar ka blueprint hai — JavaScript se tum deewar hata sakte ho, darwaza jod sakte ho, rang badal sakte ho -->
+
+
+<!-- Level 1: DOM Ka Structure (Tree)
+DOM ek tree hai. Sabse upar document hota hai.
+
+text
+document
+   ↓
+<html>
+   ↓
+├── <head>
+│     └── <title>
+│
+└── <body>
+      ├── <h1>
+      └── <p>
+Har cheez ek "node" hai:
+
+Element node = <h1>, <p>
+
+Text node = "Hello"
+
+Attribute node = class="btn" -->
