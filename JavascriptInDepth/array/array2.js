@@ -145,3 +145,48 @@ console.log(arr6.indexOf("name",2)); //-1 kyoki starting index 2 hai jbki name t
 console.log(arr6.includes("Hritik")); // only two values get true aur false
 
 
+// reverse()~~~~~~~~~~~~~~~~~~~~~~~```
+
+// Pehle Ek Line Me
+// reverse() = array ka order ulta kar do. Pehla last, last pehla. Original array badal jaata hai.
+
+// Syntax
+// js
+// array.reverse()
+
+const arr7 = ["apple", "banana", "mango", "orange"];
+arr7.reverse()
+console.log(arr7);
+
+// original array me change hota hai
+// reverse sirf arrya pe kaam krta hai string pe nhi
+
+
+// sort()~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Pehle Ek Line Me
+// sort() = array ko order me lagata hai. Original array badal jaata hai. Default me string ki tarah sort karta hai — numbers ke liye compare function dena padta hai
+
+const arr8 = ["banana", "apple", "mango", "orange"];
+console.log(arr8.sort());
+// console.log(arr8);
+
+// Example 2: Number Sort — Yaha Problem Hai!
+// js
+
+const numbers = [10, 2, 30, 4, 5];
+
+numbers.sort();
+console.log(numbers);   // [10, 2, 30, 4, 5] 😲
+// Kya hua? Sort nahi hua? Ya galat hua?
+
+// kyoki sort number ko string ki treh sort krta hai
+
+// use compare function
+let a,b;
+numbers.sort(function(a,b){
+    return a - b;
+})
+
+console.log(numbers);
+
