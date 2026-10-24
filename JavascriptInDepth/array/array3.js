@@ -144,4 +144,3 @@ const sum1 = digit.reduce((total,num) => {
 console.log(sum1);
 // original array nhi change hota hai
 
-
