@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Events -->
+        <!-- Event Kya Hai? — Ek Line Me
+        Event = koi cheez jo page pe hoti hai — click, typing, scroll, mouse move. JavaScript in events ko sun sakta hai aur react kar sakta hai. -->
+
+        <!-- Part 1: Event Ke Bina Page Kaisa Hota?
+        html
+        <button>Click Me</button>
+        Bina event ke: Button dead hai. Click karo, kuch nahi hota.
+
+        Event ke saath: Click karo, kuch hota hai -->
+
+
+        <!-- addEventListener() (Best, Modern) -->
+        <!-- iski help se hum events lgaate hai -->
+
+        <!-- Part 4: Event Object — Sabse Important -->
+
+        <!-- Jab event hota hai, JavaScript event object deta hai. Isme saari information hoti hai. -->
+
+        <!-- Mouse Events
+         Event	Kab hota
+         click	Click pe
+         dblclick	Double click pe
+         mousedown	Mouse button dabaya
+         mouseup	Mouse button chhoda
+         mousemove	Mouse move hua
+         mouseenter	Mouse element me aaya
+         mouseleave	Mouse element se gaya
+         mouseover	Mouse over (bubbling ke saath)
+         mouseout	Mouse out (bubbling ke saath)
+         contextmenu	Right click -->
+
+        <!-- Keyboard Events
+        Event Kab hota
+        keydown Key dabaya
+        keyup Key chhoda
+        keypress Key press (deprecated) -->
+
+
+        <!-- Form Events
+        Event Kab hota
+        submit =Form submit hua
+        change =Value badli (blur pe)
+        input =Har keystroke pe
+        focus= Element focus me aaya
+        blur =Element focus se gaya -->
+
+        <!-- Window Events
+        Event Kab hota
+        load = Page load hua
+        resize = Window resize hua
+        scroll = Scroll hua
+        beforeunload = Page close hone se pehle -->
+
+
+        <!-- Part 6: Event Propagation — Sabse Important Concept
+        Jab event hota hai, wo upar ki taraf bubble karta hai. -->
+
+
+
+    </head>
+    <style>
+
+    </style>
+
+    <body>
+
+        <button id="btn1">Click me..</button>
+        <!-- abhi html me button to bn gya par dead hai  -->
+         <div id="parent">
+            <button id="child">click</button>
+         </div>
+
+         <a href="https://google.com" id="link">Google</a>
+         <!-- hume agar google me jaane se rokna hai link ko to preventDefault use krte hai  -->
+        <script>
+            const btn = document.getElementById("btn1");
+
+            btn.addEventListener("click", (event) => {
+
+                // event object
+
+                console.log(event);
+                console.log("Type : ", event.type);
+                console.log("target : ", event.target);
+                console.log("clientX : ", event.clientX);
+                console.log("key : ", event.ctrlKey);
+
+                const divs = document.createElement("div");
+                divs.style.backgroundColor = "green";
+                divs.style.height = "200px";
+                divs.style.width = "200px";
+                divs.style.marginTop = "20px";
+                document.body.append(divs);
+            });
+
+            // ab hume jaise hi button par click krenge to ek div bnega kyoki click hone par event call hua
+
+            // event bubbling
+            document.getElementById("parent").addEventListener("click",()=>{
+                console.log("Parent click");
+            });
+            document.getElementById("child").addEventListener("click",()=>{
+                console.log("child click");
+            });
+
+            // event capturing
+            document.getElementById("parent").addEventListener("click",()=>{
+                console.log("Parent click");
+            },true);
+            document.getElementById("child").addEventListener("click",()=>{
+                console.log("child click");
+            },true);
+
+            // stopPropagation()
+            document.getElementById("parent").addEventListener("click",()=>{
+                console.log("Parent click");
+
+            });
+            document.getElementById("child").addEventListener("click",(eve)=>{
+                console.log("child click");
+                eve.stopPropagation(); // sirf child click hoga
+            });
+
+            // preventDefault
+            const link = document.getElementById("link");
+            link.addEventListener("click",(event)=>{
+                event.preventDefault();// ab google me nhi jaayega
+            });
+            
+        </script>
+    </body>
+
+</html>
