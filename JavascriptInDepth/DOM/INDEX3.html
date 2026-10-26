@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 3</title>
+</head>
+
+<!-- Level 4: Element Ki Properties Change Karna -->
+
+ <!-- 1 = > style change -->
+
+<style>
+    #box{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        text-align: center;
+    }
+
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        border-radius: 30px;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .toggle{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        border-radius: 30px;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div id="box">Iam box</div>
+    <div>Deepanshu</div>
+    <div id="to" class="toggle">Iam toggle</div>
+
+    <script>
+        // 1 = >// js se kisi ka bhi style chnage kaise kre
+
+        let box = document.getElementById("box");
+        box.style.backgroundColor = "red";
+        box.style.height = "100px";
+        box.style.width = "100px";
+
+        // so ab box ka background red aur height width change ho jaayegi
+
+        // 2 => class add or remove
+
+        // add class ko add krna
+        // abhi jo dusra div hai uske andr koi bhi class add nhi hui hai
+        const divs = document.getElementsByTagName("div");
+        const Seconddiv = divs[1];
+        Seconddiv.classList.add("box2");
+
+        // aba humara box me us classs ki styling add ho jaayegi jo class humne css me likhi hogi
+
+        // remove kaise kre class ko
+        Seconddiv.classList.remove("box2");
+        // ab humari styling firse 0 ho jaayegi kyoki class hi remove ho gyi
+
+        // toggle iska use class exist hai to remove kro remove hai to add kro itna hai
+        // jaie ab hum box id waale div me krenge
+        const toggle  = document.getElementById("to");
+        to.classList.toggle("toggle");
+
+        // ab agar class hai to remove kro nhi hai to add kro
+
+        to.classList.contains("toggle");
+        // true ya false me ans deta hai class exist hai ya nhi 
+
+
+
+    </script>
+</body>
+</html>
