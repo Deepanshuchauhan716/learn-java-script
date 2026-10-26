@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Level 3: Element Ka Content Change Karna -->
+    <!-- 1. textContent — Sirf text -->
+    <!-- 2. innerHTML — HTML ke saath -->
+    <!-- 3. innerText — Visible text -->
+
+
+    <!-- 1 textContent -->
+
+        <!-- Pehle Ek Line Me
+    textContent = kisi element ke andar jo text likha hai, use padhna ya badalna.
+
+    Bas itna. Aur kuch nahi. -->
+
+    <!-- html tag ke andr ka text read aur write krta hai bs  -->
+
+    <!-- 2-- innerHTML -->
+
+    <!-- Pehle Ek Line Me
+    innerHTML = element ke andar ka HTML padhna ya badalna. HTML tags render hote hain. -->
+
+    <style>
+
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1 id="heading" style="color: red;">Deepanshu</h1>
+    <h2 id="heading2" style="color: green;">Himanshu</h2>
+    <ul id="list">LIST</ul>
+
+    <p id="post">Hello this line....
+        <span id="more" class="hidden">ur yaha baaki ka text hai jo shuru me hidden hai.
+            Ye text tab dikhta hai jab "Read More" pe click karte hain.
+            Bahut saara text yaha hai jo user ko baad me dikhta hai.</span>
+    </p>
+    <button id="btn">Read more</button>
+
+    <script>
+
+        // text content
+        const heading = document.getElementById("heading");
+        heading.textContent = "I am Java Script";
+        console.log(heading);
+
+        // innerHTML
+        const heading2 = document.getElementById("heading2");
+        heading2.innerHTML = "<b>Bold</b> and <i>Italic</i>";
+        console.log(heading2);
+
+        // real use of innerHTML
+        const list = document.getElementById("list");
+        const user = ["Deepanshu","Dev","Himesh"];
+
+        list.innerHTML = user.map((users) => {
+            return `<li>${users}</li>`
+        }).join("");
+
+        console.log(list);
+
+        const post = document.getElementById("post");
+        const more = document.getElementById("more")
+        const btn  = document.getElementById("btn");
+
+        btn.addEventListener("click",()=>{
+            const isHidden = more.classList.contains("hidden");
+
+            if(isHidden){
+                more.classList.remove("hidden");
+                btn.textContent = "Read less";
+            }else{
+                more.classList.add("hidden");
+                btn.textContent = "Read more";
+            }
+        });
+
+        
+
+    </script>
+</body>
+</html>
