@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 5</title>
+    <!-- New elements bnana aur add krna  -->
+    <!-- Naya element banana = JavaScript se ek naya HTML tag banana, aur usko page pe dikhana -->
+</head>
+<style>
+
+.new{
+    background-color:aqua;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+}
+</style>
+<body>
+
+    <script>
+        // bina html me div bnaaye humne sirf js ki help se ek div create kiya with styling
+        
+        const CreateDiv = document.createElement("div");
+        CreateDiv.textContent = "Hello world";
+        CreateDiv.classList.add("new")
+
+        document.body.append(CreateDiv);
+    </script>
+</body>
+</html>

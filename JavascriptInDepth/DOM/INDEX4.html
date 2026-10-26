@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Attributes -->
+</head>
+<style>
+
+</style>
+<body>
+
+    <img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nuLSca2kmpxE106M2WLVdQOH1GKwXPZWVQAxYnf8yoM8EnmkaDqMEz8&s=10" alt="My photo">
+    <!-- src , alt , width ye sab attributes hai  -->
+
+
+    <script>
+        // attribute ko get krna
+
+        const img = document.getElementById("image1");
+        console.log(img.getAttribute("src")); // isse src ka pura path aa jaayega
+        console.log(img.getAttribute("alt")); // isse src ka pura path aa jaayega
+
+        // attributes ko set krna
+        img.setAttribute("height","100px");
+        img.setAttribute("width","100px");
+
+        console.log(img.getAttribute("height"));
+        console.log(img.getAttribute("width"));
+
+        // abhi humari image ki height 300 thi aur width bhi lekin attribute ko set krne ke baad uski value change ho gyi
+
+        // attributes ko remove krna
+        img.removeAttribute("width");
+        console.log(img.getAttribute("width")); // null
+
+        // attributes check krna hai ya nhi
+        // true false me ans dega
+        console.log(img.hasAttribute("height")); // true
+        console.log(img.hasAttribute("width")); // flase
+
+     </script>
+</body>
+</html>
