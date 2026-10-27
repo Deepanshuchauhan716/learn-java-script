@@ -1,0 +1,93 @@
+<!-- Level 0: Storage Kya Hai?
+Ek line mein:
+
+Storage = Browser ke andar data save karne ka tarika, taaki page refresh ya browser band hone ke baad bhi data yaad rahe.
+
+Real life: Tumhare phone mein contacts save hote hain. Phone restart karo, contacts waise hi rehte hain. Browser storage bhi waisa hi hai. -->
+
+
+<!-- Level 1: 3 Types Ke Storage -->
+
+<!-- 1 => localstorage
+2 => sessionstorage
+3 => cookies -->
+
+<!-- Level 2: localStorage vs sessionStorage — Basic Difference -->
+
+<!-- Level 2: localStorage vs sessionStorage — Basic Difference
+Feature localStorage                                sessionStorage
+
+Expiry ❌ Kabhi nahi (manually delete)             ✅ Tab close hone pe
+Scope Same domain ke saare tabs                     Sirf wahi tab
+Capacity ~5-10 MB                                   ~5-10 MB
+Type Sirf strings                                    Sirf strings
+Sync/Async Synchronous                               Synchronous -->
+
+<!-- Level 3: Dono Ke 4 Basic Methods (Same Hain) -->
+
+
+<!-- Level 4: Data Type Problem (Sabse Important) -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 1 => method(seItem)
+        // set item local storage me item ko save krna
+        // key value pair me
+        localStorage.setItem("name","Deepanshu");
+
+        // 2 => getitem
+        let name =  localStorage.getItem("name");
+        console.log(name); // deepansuh
+        // agar hum yhi kaam session storage me krenge to
+        sessionStorage.setItem("name","Rahul");
+        let name2 = sessionStorage.getItem("name");
+        console.log(name2);
+
+        // 3. removeItem() — Ek delete
+        localStorage.removeItem("name");
+
+        // 4 => clear()
+        localStorage.clear(); //all clear
+
+        // Number
+
+        localStorage.setItem("age",25);
+        let age = localStorage.getItem("age");
+        console.log(age);
+        console.log(typeof age); // string kyoki local storage me har data string me save hota hai
+
+        // fix
+        // let age = Number(localStorage.getItem("age"));
+        // console.log(age);
+
+        // Object/Array:
+
+        let user = {
+            name : "Rahul",age : 35
+        };
+        localStorage.setItem("user",user);
+        console.log(localStorage.getItem("user"));
+        console.log(typeof user); // empty objectt
+//  because localstorag me sirf string store hoti hai isliye hum vha object store nhi kr skte isliye empty object mila
+        // fix
+
+        localStorage.setItem("user",JSON.stringify(user));
+        let users = JSON.parse(localStorage.getItem("user"));
+        console.log(users);
+
+
+
+    </script>
+</body>
+
+</html>
